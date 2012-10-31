@@ -1,0 +1,1318 @@
+<Profile>
+	<Name>Rumford at the Gate - Queen, Sarkoth, and Wishing Wells</Name>
+	<GameParams quest="87700" step="50" act="A1" difficulty="Nightmare" resumeFromSave="False" isPrivate="True" numGames="-1"  />
+	<Order>	
+ 
+		<!-- Vault to Captain Rumford walk if not possible STEP1 -->
+		<MoveTo questId="1" x="2967.923" y="2825.626" z="24.04532" pathPrecision="3" />
+ 
+		<!-- Vault to Captain Rumford walk if not possible STEP2 -->
+		<MoveTo questId="1" x="2946.97" y="2804.845" z="24.04533" pathPrecision="3" />
+ 
+		<!-- Vault to Captain Rumford walk if not possible STEP3 -->
+		<MoveTo questId="1" x="2891.741" y="2808.573" z="24.04533" pathPrecision="3" />
+ 
+		<!-- Vault to Captain Rumford walk if not possible STEP4 -->
+		<MoveTo questId="1" x="2856.554" y="2842.172" z="24.04532" pathPrecision="3" />
+ 
+		<!-- Vault to Captain Rumford walk if not possible STEP5 -->
+		<MoveTo questId="1" x="2847.702" y="2893.021" z="24.04532" pathPrecision="3" />
+ 
+		<!-- Vault to Captain Rumford or walk if not possible STEP6 -->
+		<MoveTo questId="1" x="2840.849" y="2936.939" z="24.04533" pathPrecision="3" />
+ 
+		<!-- Talk to Captain Rumford at the gate to New Tristram -->
+		<TalkTo questId="87700" stepId="50" actorId="3739" x="2840.849" y="2936.939" z="24.04533" pathPrecision="3" skipConversation="True" /> 
+		
+		<!-- Wait for the barricades to come down -->
+		<WaitTimer questId="1" step="4" waitTime="3000" />
+ 
+		<!-- Move to the barricade -->
+		<MoveTo questId="1" x="2810.71" y="2930.624" z="24.04535" pathPrecision="3" />
+ 
+		<!-- Move past the signpost -->
+		<MoveTo questId="1" x="2772.04" y="2918.374" z="24.04533" pathPrecision="3" />
+ 
+		<!-- Move to wooden planks in the road -->
+		<MoveTo questId="1" x="2740.047" y="2896.445" z="22.96468" pathPrecision="3" />
+ 
+		<!-- Move past wooden planks in the road -->
+		<MoveTo questId="1" x="2721.811" y="2862.918" z="11.65884" pathPrecision="3" />
+ 
+		<!-- Move over and past the bridge -->
+		<MoveTo questId="1" x="2647.08" y="2858.062" z="11.75286" pathPrecision="3" />
+ 
+		<!-- Move up and to the top of the wooden slats in the road -->
+		<MoveTo questId="1" x="2613.166" y="2863.017" z="22.48438" pathPrecision="3" />
+ 
+		<!-- Move past the double bend in the road -->
+		<MoveTo questId="1" x="2585.697" y="2886.264" z="27.21765" pathPrecision="3" />
+ 
+		<!-- Move to the start of the open area -->
+		<MoveTo questId="1" x="2518.657" y="2870.04" z="27.1" pathPrecision="3" />
+ 
+		<!-- Move towards the fire - mobs here - -->
+		<MoveTo questId="1" x="2496.791" y="2846.585" z="27.1" pathPrecision="3" />
+ 
+		<!-- Move past the fire and back onto the road -->
+		<MoveTo questId="1" x="2432.96" y="2861.027" z="27.1" pathPrecision="3" />
+ 
+		<!-- Move up the road -->
+		<MoveTo questId="1" x="2413.924" y="2838.132" z="27.1" pathPrecision="3" />
+ 
+		<!-- Move near 1st cellar area -->
+		<MoveTo questId="1" x="2401.402" y="2795.566" z="27.1" pathPrecision="3" />
+ 
+		<!-- Move up the road -->
+		<MoveTo questId="1" x="2365.783" y="2743.882" z="27.1" pathPrecision="3" />
+ 
+		<!-- Move up the road -->
+		<MoveTo questId="1" x="2313.526" y="2690.554" z="27.1" pathPrecision="3" />
+		
+		
+		<!-- ****************************** -->
+		<!-- Wishing Well - 1st Spawn Point -->
+		<!-- ****************************** -->
+		<If condition="ActorExistsAt(176003, 2277.743, 2669.838, 27.1, 15)">		
+	
+			<!-- Move to Wishing Well portal -->
+			<MoveTo questId="1" x="2277.743" y="2669.838" z="27.1" pathPrecision="3" />
+	 
+			<!-- enter Wishing Well -->
+			<UseObject questId="1" x="2277.743" y="2669.838" z="27.1" actorId="176003" isPortal="True" destinationWorldId="161961" />	
+	
+			<!-- first tunnel -->
+			<MoveTo questId="1" x="599.8204" y="586.3254" z="0.1" pathPrecision="3" />
+	
+			<!-- first tunnel -->
+			<MoveTo questId="1" x="561.3907" y="536.8251" z="0.1" pathPrecision="3" />
+	
+			<!-- first tunnel -->
+			<MoveTo questId="1" x="564.5542" y="519.8446" z="0.1" pathPrecision="3" />
+	
+			<!-- end of the first tunnel -->
+			<MoveTo questId="1" x="618.5053" y="471.6276" z="0.1" pathPrecision="3" />
+	
+			<!-- leaving first tunnel -->
+			<MoveTo questId="1" x="566.8047" y="524.7172" z="0.09999999" pathPrecision="3" />
+	
+			<!-- leaving first tunnel -->
+			<MoveTo questId="1" x="567.3621" y="557.3196" z="0.1" pathPrecision="3" />
+	
+			<!-- Exit the first tunnel -->
+			<MoveTo questId="1" x="596.7606" y="582.0917" z="0.1" pathPrecision="3" />
+	
+			<!-- go to second tunnel -->
+			<MoveTo questId="1" x="569.5868" y="619.0797" z="0.1" pathPrecision="3" />
+	
+			<!-- second tunnel -->
+			<MoveTo questId="1" x="538.6239" y="612.0385" z="0.1" pathPrecision="3" />
+	
+			<!-- End of the second tunnel -->
+			<MoveTo questId="1" x="475.5049" y="613.1216" z="0.1" pathPrecision="3" />
+	
+			<!-- second tunnel -->
+			<MoveTo questId="1" x="508.6369" y="609.6349" z="0.1" pathPrecision="3" />
+	
+			<!-- Exit the second tunnel -->
+			<MoveTo questId="1" x="569.4112" y="617.8286" z="0.1" pathPrecision="3" />
+	
+			<!-- Move down and into the big area -->
+			<MoveTo questId="1" x="559.687" y="657.5332" z="0.1" pathPrecision="3" />
+	
+			<!-- Move down and into the big area -->
+			<MoveTo questId="1" x="581.697" y="674.3673" z="0.1" pathPrecision="3" />
+	
+			<!-- Move down and into the big area -->
+			<MoveTo questId="1" x="603.0757" y="719.7067" z="0.1" pathPrecision="3" />
+	
+			<!-- Move to the end of the big area -->
+			<MoveTo questId="1" x="630.796" y="707.1558" z="0.1" pathPrecision="3" />
+	
+			<!-- Move up and out of the big area -->
+			<MoveTo questId="1" x="625.3596" y="673.4683" z="0.1" pathPrecision="3" />
+	
+			<!-- Move up and out of the big area -->
+			<MoveTo questId="1" x="622.1998" y="632.9279" z="0.1" pathPrecision="3" />
+	
+			<!-- Move to the last tunnel (SW area) -->
+			<MoveTo questId="1" x="649.465" y="609.2073" z="0.1" pathPrecision="3" />
+	
+			<!-- last tunnel (SW area) -->
+			<MoveTo questId="1" x="675.0934" y="603.4433" z="0.09999999" pathPrecision="3" />
+	
+			<!-- End of the last tunnel (SW area) -->
+			<MoveTo questId="1" x="716.2059" y="608.1833" z="0.09999999" pathPrecision="3" />
+	
+			<!-- last tunnel (SW area) -->
+			<MoveTo questId="1" x="675.0934" y="603.4433" z="0.09999999" pathPrecision="3" />
+	
+			<!-- Exit the last tunnel (SW area) -->
+			<MoveTo questId="1" x="657.1575" y="601.4256" z="0.1" pathPrecision="3" />
+	
+			<!-- Move back to the exit -->
+			<MoveTo questId="1" x="639.0251" y="584.1542" z="0.1" pathPrecision="3" />
+	 
+			<!-- EXIT Wishing Well -->
+			<UseObject questId="1" x="2277.743" y="2669.838" z="27.1" actorId="176537" isPortal="True" destinationWorldId="71150" />
+		
+			<!-- ********************************** -->
+			<!--    EXITED The 1st Wishing Well     -->
+			<!-- ********************************** -->	
+ 
+			<!-- Move past the 1st wishing well spawn point -->
+			<MoveTo questId="1" x="2313.526" y="2690.554" z="27.1" pathPrecision="3" />
+ 
+			<!-- Move up the road to the 2nd cellar spawn point - Damp Cellar - -->
+			<MoveTo questId="1" x="2316.799" y="2560.353" z="27.1" pathPrecision="3" />
+ 
+			<!-- Move up the road to the 2nd cellar spawn point - Damp Cellar - -->
+			<MoveTo questId="1" x="2316.799" y="2560.353" z="27.1" pathPrecision="3" />
+ 
+			<!-- Move off the road, heading towards the 2nd Well spawn point - -->
+			<MoveTo questId="1" x="2349.123" y="2497.153" z="27.1" pathPrecision="3" />
+ 
+			<!-- Check to see if a Well has spawned at the 2nd span point -->
+			<MoveTo questId="1" x="2351.766" y="2462.219" z="27.1" pathPrecision="3" />		
+ 
+			<!-- Head back to the road -->
+			<MoveTo questId="1" x="2310.865" y="2482.116" z="27.1" pathPrecision="3" />
+ 
+			<!-- Head towards the 3rd Well spawn point -->
+			<MoveTo questId="1" x="2218.832" y="2498.061" z="27.1" pathPrecision="3" />
+ 
+			<!-- Head past the 3rd Well spawn point -->
+			<MoveTo questId="1" x="2138.311" y="2531.311" z="27.1" pathPrecision="3" />
+ 
+			<!-- Head up to and check on the Sarkoth cellar -->
+			<MoveTo questId="1" x="2095.91" y="2503.277" z="27.1" pathPrecision="3" />
+		
+			<!-- ********************************************************************** -->
+			<!-- *******   SARKOTH's CELLAR (1ST WISHING WELL HAD SPAWNED)  *********** -->	
+			<!-- ********************************************************************** -->
+			<If condition="ActorExistsAt(176007, 2059.629, 2478.667, 27.02374, 15)">
+			
+				<MoveTo questId="1" x="2064.567" y="2479.541" z="27.80197" pathPrecision="3" />
+	 
+				<!-- enter cellar -->
+				<UseObject questId="1" x="2080.165" y="2496.148" z="27.1" actorId="176007" isPortal="True" destinationWorldId="106746" />
+		
+				<!-- Move to end of hallway, facing the door to Sarkoth's room -->
+				<MoveTo questId="1" x="120.4872" y="154.2549" z="0.1000008" pathPrecision="3"/>	
+		
+				<!-- Move a little way through doorway into Sarkoth's room - Sarkoth should be under attack now - -->
+				<MoveTo questId="1" x="122.1677" y="133.6614" z="0.1000001" pathPrecision="3"/>	
+		
+				<!-- Move to where Sarkoth originally stood - Loot time - -->
+				<MoveTo questId="1" x="120.5996" y="97.89087" z="0.1000008" pathPrecision="3"/>	
+		
+				<!-- Move back to doorway leading to the hallway - -->
+				<MoveTo questId="1" x="121.9528" y="132.3162" z="0.1000002" pathPrecision="3"/>		
+		
+				<!-- Move into hallway, passed the chest where char gets stuck - -->
+				<MoveTo questId="1" x="121.2433" y="155.1266" z="0.1000005" pathPrecision="3"/>		
+		
+				<!-- Move to portal -->
+				<MoveTo questId="1" x="70.68034" y="160.1532" z="3.824475" pathPrecision="3"/>	
+		
+				<!-- Leave Dank Cellar -->
+				<UseObject questId="1" x="70.68034" y="160.1532" z="3.824475" actorId="175467" isPortal="True" destinationWorldId="71150" />
+				<!-- Wait for a bit -->
+				<WaitTimer questId="1" step="4" waitTime="1000" />
+					
+				<!-- ********************************************** -->
+				<!-- *******   EXITED SARKOTH's CELLAR  *********** -->	
+				<!-- ********************************************** -->
+	  
+				<!-- Move south east of Sarkoth's cellar, on to the path -->
+				<MoveTo questId="1" x="2090.071" y="2527.623" z="27.1" pathPrecision="3" />
+	
+				<!-- Head East towards the Old Ruins -->
+				<MoveTo questId="1" x="2074.123" y="2530.553" z="27.1" pathPrecision="3" />
+ 
+				<!-- Head East towards the Old Ruins -->
+				<MoveTo questId="1" x="2025.761" y="2558.274" z="27.1" pathPrecision="3" />
+ 
+				<!-- Head East towards the Old Ruins -->
+				<MoveTo questId="1" x="1997.861" y="2586.81" z="27.1" pathPrecision="3" />
+ 
+				<!-- Move the the start of the wooden steps leading to the Old Ruins -->
+				<MoveTo questId="1" x="1994.045" y="2623.99" z="30.23421" pathPrecision="3" />
+ 
+				<!-- Move into the Old Ruins -->
+				<MoveTo questId="1" x="1992.256" y="2654.769" z="39.62415" pathPrecision="3" />
+ 
+				<!-- Take the SW road into the Old Ruins -->
+				<MoveTo questId="1" x="2004.257" y="2673.814" z="40.15685" pathPrecision="3" />
+ 
+				<!-- Take the SW road into the Old Ruins -->
+				<MoveTo questId="1" x="2056.799" y="2670.559" z="40.23704" pathPrecision="3" />
+ 
+				<!-- Move towards the 4th Well spawn point -->
+				<MoveTo questId="1" x="2114.916" y="2675.161" z="40.15685" pathPrecision="3" />
+ 
+				<!-- Move alog the SE road and next to the Dark cellar spawn point -->
+				<MoveTo questId="1" x="2116.043" y="2714.831" z="40.15685" pathPrecision="3" />
+ 
+				<!-- Move to the fountain -->
+				<MoveTo questId="1" x="2109.567" y="2759.404" z="40.15685" pathPrecision="3" />
+ 
+				<!-- Move towards the Queen -->
+				<MoveTo questId="1" x="2079.193" y="2774.092" z="40.15685" pathPrecision="3" />
+ 
+				<!-- Move towards the Queen -->
+				<MoveTo questId="1" x="2037.812" y="2773.149" z="40.15685" pathPrecision="3" />
+ 
+				<!-- Move towards Waypoint -->
+				<MoveTo questId="1" x="2007.91" y="2755.913" z="40.15685" pathPrecision="3" />
+ 
+				<!-- Move passed the queen -->
+				<MoveTo questId="1" x="1977.655" y="2787.449" z="42.1177" pathPrecision="3" />	
+ 
+				<!-- Take the Waypoint back to New Tristram -->
+				<UseWaypoint questId="1" x="1977.655" y="2787.449" z="42.1177" levelArea="1999503360" actorId="192164" waypointNumber="0" />
+		
+				<!-- Wait for a bit -->
+				<WaitTimer questId="1" waitTime="1000" />
+	  	  
+				<!-- Talk to Captain Rumford in New Tristram to hand in the quest -->
+				<TalkTo questId="87700" stepId="55" actorId="3739" x="2961.558" y="2807.838" z="24.04533" pathPrecision="3" skipConversation="True" /> 
+			
+			
+				<LeaveGame reason="Lets do it again" />
+		
+			</If>		
+			<!-- *************************************************************************** -->
+			<!-- *******  END OF SARKOTH's CELLAR (1ST WISHING WELL HAD SPAWNED) *********** -->
+			<!-- *************************************************************************** -->
+	
+			<!-- Head East towards the Old Ruins -->
+			<MoveTo questId="1" x="2074.123" y="2530.553" z="27.1" pathPrecision="3" />
+ 
+			<!-- Head East towards the Old Ruins -->
+			<MoveTo questId="1" x="2025.761" y="2558.274" z="27.1" pathPrecision="3" />
+ 
+			<!-- Head East towards the Old Ruins -->
+			<MoveTo questId="1" x="1997.861" y="2586.81" z="27.1" pathPrecision="3" />
+ 
+			<!-- Move the the start of the wooden steps leading to the Old Ruins -->
+			<MoveTo questId="1" x="1994.045" y="2623.99" z="30.23421" pathPrecision="3" />
+ 
+			<!-- Move into the Old Ruins -->
+			<MoveTo questId="1" x="1992.256" y="2654.769" z="39.62415" pathPrecision="3" />
+ 
+			<!-- Take the SW road into the Old Ruins -->
+			<MoveTo questId="1" x="2004.257" y="2673.814" z="40.15685" pathPrecision="3" />
+ 
+			<!-- Take the SW road into the Old Ruins -->
+			<MoveTo questId="1" x="2056.799" y="2670.559" z="40.23704" pathPrecision="3" />
+ 
+			<!-- Move towards the 4th Well spawn point -->
+			<MoveTo questId="1" x="2114.916" y="2675.161" z="40.15685" pathPrecision="3" />
+ 
+			<!-- Move alog the SE road and next to the Dark cellar spawn point -->
+			<MoveTo questId="1" x="2116.043" y="2714.831" z="40.15685" pathPrecision="3" />
+ 
+			<!-- Move to the fountain -->
+			<MoveTo questId="1" x="2109.567" y="2759.404" z="40.15685" pathPrecision="3" />
+ 
+			<!-- Move towards the Queen -->
+			<MoveTo questId="1" x="2079.193" y="2774.092" z="40.15685" pathPrecision="3" />
+ 
+			<!-- Move towards the Queen -->
+			<MoveTo questId="1" x="2037.812" y="2773.149" z="40.15685" pathPrecision="3" />
+ 
+			<!-- Move towards Waypoint -->
+			<MoveTo questId="1" x="2007.91" y="2755.913" z="40.15685" pathPrecision="3" />
+ 
+			<!-- Move passed the queen -->
+			<MoveTo questId="1" x="1977.655" y="2787.449" z="42.1177" pathPrecision="3" />	
+ 
+			<!-- Take the Waypoint back to New Tristram -->
+			<UseWaypoint questId="1" x="1977.655" y="2787.449" z="42.1177" levelArea="1999503360" actorId="192164" waypointNumber="0" />
+		
+			<!-- Wait for a bit -->
+			<WaitTimer questId="1" waitTime="1000" />
+	  	  
+			<!-- Talk to Captain Rumford in New Tristram to hand in the quest -->
+			<TalkTo questId="87700" stepId="55" actorId="3739" x="2961.558" y="2807.838" z="24.04533" pathPrecision="3" skipConversation="True" /> 
+	
+			<LeaveGame reason="Time to start again!" />
+		
+			<!-- We are back in New Tristram -->
+			<!-- Run Done! -->
+			
+		</If>
+		<!-- *********************************** -->
+		<!-- END OF 1ST WISHING WELL SPAWN POINT -->
+		<!-- *********************************** -->
+ 
+		<!-- Move past the 1st wishing well spawn point -->
+		<MoveTo questId="1" x="2313.526" y="2690.554" z="27.1" pathPrecision="3" />
+ 
+		<!-- Move up the road to the 2nd cellar spawn point - Damp Cellar - -->
+		<MoveTo questId="1" x="2316.799" y="2560.353" z="27.1" pathPrecision="3" />
+ 
+		<!-- Move up the road to the 2nd cellar spawn point - Damp Cellar - -->
+		<MoveTo questId="1" x="2316.799" y="2560.353" z="27.1" pathPrecision="3" />
+ 
+		<!-- Move off the road, heading towards the 2nd Well spawn point - -->
+		<MoveTo questId="1" x="2349.123" y="2497.153" z="27.1" pathPrecision="3" />
+ 
+		<!-- Check to see if a Well has spawned at the 2nd span point -->
+		<MoveTo questId="1" x="2351.766" y="2462.219" z="27.1" pathPrecision="3" />
+		
+		<!-- ****************************** -->
+		<!-- Wishing Well - 2nd Spawn Point -->
+		<!-- ****************************** -->
+		<If condition="ActorExistsAt(176003, 2400.494, 2451.034, 27.1, 15)">	
+	
+			<!-- Move to Wishing Well portal -->
+			<MoveTo questId="1" x="2400.494" y="2451.034" z="27.1" pathPrecision="3" />
+	 
+			<!-- enter Wishing Well -->
+			<UseObject questId="1" x="2400.494" y="2451.034" z="27.1" actorId="176003" isPortal="True" destinationWorldId="161961" />		
+	
+			<!-- first tunnel -->
+			<MoveTo questId="1" x="599.8204" y="586.3254" z="0.1" pathPrecision="3" />
+	
+			<!-- first tunnel -->
+			<MoveTo questId="1" x="561.3907" y="536.8251" z="0.1" pathPrecision="3" />
+	
+			<!-- first tunnel -->
+			<MoveTo questId="1" x="564.5542" y="519.8446" z="0.1" pathPrecision="3" />
+	
+			<!-- end of the first tunnel -->
+			<MoveTo questId="1" x="618.5053" y="471.6276" z="0.1" pathPrecision="3" />
+	
+			<!-- leaving first tunnel -->
+			<MoveTo questId="1" x="566.8047" y="524.7172" z="0.09999999" pathPrecision="3" />
+	
+			<!-- leaving first tunnel -->
+			<MoveTo questId="1" x="567.3621" y="557.3196" z="0.1" pathPrecision="3" />
+	
+			<!-- Exit the first tunnel -->
+			<MoveTo questId="1" x="596.7606" y="582.0917" z="0.1" pathPrecision="3" />
+	
+			<!-- go to second tunnel -->
+			<MoveTo questId="1" x="569.5868" y="619.0797" z="0.1" pathPrecision="3" />
+	
+			<!-- second tunnel -->
+			<MoveTo questId="1" x="538.6239" y="612.0385" z="0.1" pathPrecision="3" />
+	
+			<!-- End of the second tunnel -->
+			<MoveTo questId="1" x="475.5049" y="613.1216" z="0.1" pathPrecision="3" />
+	
+			<!-- second tunnel -->
+			<MoveTo questId="1" x="508.6369" y="609.6349" z="0.1" pathPrecision="3" />
+	
+			<!-- Exit the second tunnel -->
+			<MoveTo questId="1" x="569.4112" y="617.8286" z="0.1" pathPrecision="3" />
+	
+			<!-- Move down and into the big area -->
+			<MoveTo questId="1" x="559.687" y="657.5332" z="0.1" pathPrecision="3" />
+	
+			<!-- Move down and into the big area -->
+			<MoveTo questId="1" x="581.697" y="674.3673" z="0.1" pathPrecision="3" />
+	
+			<!-- Move down and into the big area -->
+			<MoveTo questId="1" x="603.0757" y="719.7067" z="0.1" pathPrecision="3" />
+	
+			<!-- Move to the end of the big area -->
+			<MoveTo questId="1" x="630.796" y="707.1558" z="0.1" pathPrecision="3" />
+	
+			<!-- Move up and out of the big area -->
+			<MoveTo questId="1" x="625.3596" y="673.4683" z="0.1" pathPrecision="3" />
+	
+			<!-- Move up and out of the big area -->
+			<MoveTo questId="1" x="622.1998" y="632.9279" z="0.1" pathPrecision="3" />
+	
+			<!-- Move to the last tunnel (SW area) -->
+			<MoveTo questId="1" x="649.465" y="609.2073" z="0.1" pathPrecision="3" />
+	
+			<!-- last tunnel (SW area) -->
+			<MoveTo questId="1" x="675.0934" y="603.4433" z="0.09999999" pathPrecision="3" />
+	
+			<!-- End of the last tunnel (SW area) -->
+			<MoveTo questId="1" x="716.2059" y="608.1833" z="0.09999999" pathPrecision="3" />
+	
+			<!-- last tunnel (SW area) -->
+			<MoveTo questId="1" x="675.0934" y="603.4433" z="0.09999999" pathPrecision="3" />
+	
+			<!-- Exit the last tunnel (SW area) -->
+			<MoveTo questId="1" x="657.1575" y="601.4256" z="0.1" pathPrecision="3" />
+	
+			<!-- Move back to the exit -->
+			<MoveTo questId="1" x="639.0251" y="584.1542" z="0.1" pathPrecision="3" />
+	 
+			<!-- EXIT Wishing Well -->
+			<UseObject questId="1" x="2277.743" y="2669.838" z="27.1" actorId="176537" isPortal="True" destinationWorldId="71150" />
+		
+			<!-- ********************************** -->
+			<!--    EXITED The 2nd Wishing Well     -->
+			<!-- ********************************** -->	
+		
+ 
+			<!-- Head back to the road -->
+			<MoveTo questId="1" x="2310.865" y="2482.116" z="27.1" pathPrecision="3" />
+ 
+			<!-- Head towards the 3rd Well spawn point -->
+			<MoveTo questId="1" x="2218.832" y="2498.061" z="27.1" pathPrecision="3" />
+ 
+			<!-- Head past the 3rd Well spawn point -->
+			<MoveTo questId="1" x="2138.311" y="2531.311" z="27.1" pathPrecision="3" />
+ 
+			<!-- Head up to and check on the Sarkoth cellar -->
+			<MoveTo questId="1" x="2095.91" y="2503.277" z="27.1" pathPrecision="3" />
+				
+			<!-- ********************************************************************** -->
+			<!-- *******   SARKOTH's CELLAR (2ND WISHING WELL HAD SPAWNED)  *********** -->	
+			<!-- ********************************************************************** -->
+			<If condition="ActorExistsAt(176007, 2059.629, 2478.667, 27.02374, 15)">
+			
+				<MoveTo questId="1" x="2064.567" y="2479.541" z="27.80197" pathPrecision="3" />
+	 
+				<!-- enter cellar -->
+				<UseObject questId="1" x="2080.165" y="2496.148" z="27.1" actorId="176007" isPortal="True" destinationWorldId="106746" />
+		
+				<!-- Move to end of hallway, facing the door to Sarkoth's room -->
+				<MoveTo questId="1" x="120.4872" y="154.2549" z="0.1000008" pathPrecision="3"/>	
+		
+				<!-- Move a little way through doorway into Sarkoth's room - Sarkoth should be under attack now - -->
+				<MoveTo questId="1" x="122.1677" y="133.6614" z="0.1000001" pathPrecision="3"/>	
+		
+				<!-- Move to where Sarkoth originally stood - Loot time - -->
+				<MoveTo questId="1" x="120.5996" y="97.89087" z="0.1000008" pathPrecision="3"/>	
+		
+				<!-- Move back to doorway leading to the hallway - -->
+				<MoveTo questId="1" x="121.9528" y="132.3162" z="0.1000002" pathPrecision="3"/>		
+		
+				<!-- Move into hallway, passed the chest where char gets stuck - -->
+				<MoveTo questId="1" x="121.2433" y="155.1266" z="0.1000005" pathPrecision="3"/>		
+		
+				<!-- Move to portal -->
+				<MoveTo questId="1" x="70.68034" y="160.1532" z="3.824475" pathPrecision="3"/>	
+		
+				<!-- Leave Dank Cellar -->
+				<UseObject questId="1" x="70.68034" y="160.1532" z="3.824475" actorId="175467" isPortal="True" destinationWorldId="71150" />
+				<!-- Wait for a bit -->
+				<WaitTimer questId="1" step="4" waitTime="1000" />
+					
+				<!-- ********************************************** -->
+				<!-- *******   EXITED SARKOTH's CELLAR  *********** -->	
+				<!-- ********************************************** -->
+	  
+				<!-- Move south east of Sarkoth's cellar, on to the path -->
+				<MoveTo questId="1" x="2090.071" y="2527.623" z="27.1" pathPrecision="3" />
+	
+				<!-- Head East towards the Old Ruins -->
+				<MoveTo questId="1" x="2074.123" y="2530.553" z="27.1" pathPrecision="3" />
+ 
+				<!-- Head East towards the Old Ruins -->
+				<MoveTo questId="1" x="2025.761" y="2558.274" z="27.1" pathPrecision="3" />
+ 
+				<!-- Head East towards the Old Ruins -->
+				<MoveTo questId="1" x="1997.861" y="2586.81" z="27.1" pathPrecision="3" />
+ 
+				<!-- Move the the start of the wooden steps leading to the Old Ruins -->
+				<MoveTo questId="1" x="1994.045" y="2623.99" z="30.23421" pathPrecision="3" />
+ 
+				<!-- Move into the Old Ruins -->
+				<MoveTo questId="1" x="1992.256" y="2654.769" z="39.62415" pathPrecision="3" />
+ 
+				<!-- Take the SW road into the Old Ruins -->
+				<MoveTo questId="1" x="2004.257" y="2673.814" z="40.15685" pathPrecision="3" />
+ 
+				<!-- Take the SW road into the Old Ruins -->
+				<MoveTo questId="1" x="2056.799" y="2670.559" z="40.23704" pathPrecision="3" />
+ 
+				<!-- Move towards the 4th Well spawn point -->
+				<MoveTo questId="1" x="2114.916" y="2675.161" z="40.15685" pathPrecision="3" />
+ 
+				<!-- Move alog the SE road and next to the Dark cellar spawn point -->
+				<MoveTo questId="1" x="2116.043" y="2714.831" z="40.15685" pathPrecision="3" />
+ 
+				<!-- Move to the fountain -->
+				<MoveTo questId="1" x="2109.567" y="2759.404" z="40.15685" pathPrecision="3" />
+ 
+				<!-- Move towards the Queen -->
+				<MoveTo questId="1" x="2079.193" y="2774.092" z="40.15685" pathPrecision="3" />
+ 
+				<!-- Move towards the Queen -->
+				<MoveTo questId="1" x="2037.812" y="2773.149" z="40.15685" pathPrecision="3" />
+ 
+				<!-- Move towards Waypoint -->
+				<MoveTo questId="1" x="2007.91" y="2755.913" z="40.15685" pathPrecision="3" />
+ 
+				<!-- Move passed the queen -->
+				<MoveTo questId="1" x="1977.655" y="2787.449" z="42.1177" pathPrecision="3" />	
+ 
+				<!-- Take the Waypoint back to New Tristram -->
+				<UseWaypoint questId="1" x="1977.655" y="2787.449" z="42.1177" levelArea="1999503360" actorId="192164" waypointNumber="0" />
+		
+				<!-- Wait for a bit -->
+				<WaitTimer questId="1" waitTime="1000" />
+	  	  
+				<!-- Talk to Captain Rumford in New Tristram to hand in the quest -->
+				<TalkTo questId="87700" stepId="55" actorId="3739" x="2961.558" y="2807.838" z="24.04533" pathPrecision="3" skipConversation="True" /> 
+			
+			
+				<LeaveGame reason="Lets do it again" />
+			
+		
+			</If>
+			<!-- *************************************************************************** -->
+			<!-- *******  END OF SARKOTH's CELLAR (2ND WISHING WELL HAD SPAWNED) *********** -->
+			<!-- *************************************************************************** -->
+	
+			<!-- Head East towards the Old Ruins -->
+			<MoveTo questId="1" x="2074.123" y="2530.553" z="27.1" pathPrecision="3" />
+ 
+			<!-- Head East towards the Old Ruins -->
+			<MoveTo questId="1" x="2025.761" y="2558.274" z="27.1" pathPrecision="3" />
+ 
+			<!-- Head East towards the Old Ruins -->
+			<MoveTo questId="1" x="1997.861" y="2586.81" z="27.1" pathPrecision="3" />
+ 
+			<!-- Move the the start of the wooden steps leading to the Old Ruins -->
+			<MoveTo questId="1" x="1994.045" y="2623.99" z="30.23421" pathPrecision="3" />
+ 
+			<!-- Move into the Old Ruins -->
+			<MoveTo questId="1" x="1992.256" y="2654.769" z="39.62415" pathPrecision="3" />
+ 
+			<!-- Take the SW road into the Old Ruins -->
+			<MoveTo questId="1" x="2004.257" y="2673.814" z="40.15685" pathPrecision="3" />
+ 
+			<!-- Take the SW road into the Old Ruins -->
+			<MoveTo questId="1" x="2056.799" y="2670.559" z="40.23704" pathPrecision="3" />
+ 
+			<!-- Move towards the 4th Well spawn point -->
+			<MoveTo questId="1" x="2114.916" y="2675.161" z="40.15685" pathPrecision="3" />
+ 
+			<!-- Move alog the SE road and next to the Dark cellar spawn point -->
+			<MoveTo questId="1" x="2116.043" y="2714.831" z="40.15685" pathPrecision="3" />
+ 
+			<!-- Move to the fountain -->
+			<MoveTo questId="1" x="2109.567" y="2759.404" z="40.15685" pathPrecision="3" />
+ 
+			<!-- Move towards the Queen -->
+			<MoveTo questId="1" x="2079.193" y="2774.092" z="40.15685" pathPrecision="3" />
+ 
+			<!-- Move towards the Queen -->
+			<MoveTo questId="1" x="2037.812" y="2773.149" z="40.15685" pathPrecision="3" />
+ 
+			<!-- Move towards Waypoint -->
+			<MoveTo questId="1" x="2007.91" y="2755.913" z="40.15685" pathPrecision="3" />
+ 
+			<!-- Move passed the queen -->
+			<MoveTo questId="1" x="1977.655" y="2787.449" z="42.1177" pathPrecision="3" />	
+ 
+			<!-- Take the Waypoint back to New Tristram -->
+			<UseWaypoint questId="1" x="1977.655" y="2787.449" z="42.1177" levelArea="1999503360" actorId="192164" waypointNumber="0" />
+		
+			<!-- Wait for a bit -->
+			<WaitTimer questId="1" waitTime="1000" />
+	  	  
+			<!-- Talk to Captain Rumford in New Tristram to hand in the quest -->
+			<TalkTo questId="87700" stepId="55" actorId="3739" x="2961.558" y="2807.838" z="24.04533" pathPrecision="3" skipConversation="True" /> 
+	
+			<LeaveGame reason="Time to start again!" />
+		
+			<!-- We are back in New Tristram -->
+			<!-- Run Done! -->
+		
+		</If>
+		<!-- *********************************** -->
+		<!-- END OF 2ND WISHING WELL SPAWN POINT -->
+		<!-- *********************************** -->
+		
+ 
+		<!-- Head back to the road -->
+		<MoveTo questId="1" x="2310.865" y="2482.116" z="27.1" pathPrecision="3" />
+ 
+		<!-- Head towards the 3rd Well spawn point -->
+		<MoveTo questId="1" x="2218.832" y="2498.061" z="27.1" pathPrecision="3" />
+		
+		
+		<!-- ****************************** -->
+		<!-- Wishing Well - 3rd Spawn Point -->
+		<!-- ****************************** -->
+		<If condition="ActorExistsAt(176003, 2173.195, 2482.941, 27.1, 15)">
+	
+			<!-- Move to Wishing Well portal -->
+			<MoveTo questId="1" x="2173.195" y="2482.941" z="27.1" pathPrecision="3" />
+	 
+			<!-- enter Wishing Well -->
+			<UseObject questId="1" x="2173.195" y="2482.941" z="27.1" actorId="176003" isPortal="True" destinationWorldId="161961" />		
+	
+			<!-- first tunnel -->
+			<MoveTo questId="1" x="599.8204" y="586.3254" z="0.1" pathPrecision="3" />
+	
+			<!-- first tunnel -->
+			<MoveTo questId="1" x="561.3907" y="536.8251" z="0.1" pathPrecision="3" />
+	
+			<!-- first tunnel -->
+			<MoveTo questId="1" x="564.5542" y="519.8446" z="0.1" pathPrecision="3" />
+	
+			<!-- end of the first tunnel -->
+			<MoveTo questId="1" x="618.5053" y="471.6276" z="0.1" pathPrecision="3" />
+	
+			<!-- leaving first tunnel -->
+			<MoveTo questId="1" x="566.8047" y="524.7172" z="0.09999999" pathPrecision="3" />
+	
+			<!-- leaving first tunnel -->
+			<MoveTo questId="1" x="567.3621" y="557.3196" z="0.1" pathPrecision="3" />
+	
+			<!-- Exit the first tunnel -->
+			<MoveTo questId="1" x="596.7606" y="582.0917" z="0.1" pathPrecision="3" />
+	
+			<!-- go to second tunnel -->
+			<MoveTo questId="1" x="569.5868" y="619.0797" z="0.1" pathPrecision="3" />
+	
+			<!-- second tunnel -->
+			<MoveTo questId="1" x="538.6239" y="612.0385" z="0.1" pathPrecision="3" />
+	
+			<!-- End of the second tunnel -->
+			<MoveTo questId="1" x="475.5049" y="613.1216" z="0.1" pathPrecision="3" />
+		
+			<!-- second tunnel -->
+			<MoveTo questId="1" x="508.6369" y="609.6349" z="0.1" pathPrecision="3" />
+	
+			<!-- Exit the second tunnel -->
+			<MoveTo questId="1" x="569.4112" y="617.8286" z="0.1" pathPrecision="3" />
+	
+			<!-- Move down and into the big area -->
+			<MoveTo questId="1" x="559.687" y="657.5332" z="0.1" pathPrecision="3" />
+	
+			<!-- Move down and into the big area -->
+			<MoveTo questId="1" x="581.697" y="674.3673" z="0.1" pathPrecision="3" />
+	
+			<!-- Move down and into the big area -->
+			<MoveTo questId="1" x="603.0757" y="719.7067" z="0.1" pathPrecision="3" />
+	
+			<!-- Move to the end of the big area -->
+			<MoveTo questId="1" x="630.796" y="707.1558" z="0.1" pathPrecision="3" />
+	
+			<!-- Move up and out of the big area -->
+			<MoveTo questId="1" x="625.3596" y="673.4683" z="0.1" pathPrecision="3" />
+	
+			<!-- Move up and out of the big area -->
+			<MoveTo questId="1" x="622.1998" y="632.9279" z="0.1" pathPrecision="3" />
+	
+			<!-- Move to the last tunnel (SW area) -->
+			<MoveTo questId="1" x="649.465" y="609.2073" z="0.1" pathPrecision="3" />
+	
+			<!-- last tunnel (SW area) -->
+			<MoveTo questId="1" x="675.0934" y="603.4433" z="0.09999999" pathPrecision="3" />
+	
+			<!-- End of the last tunnel (SW area) -->
+			<MoveTo questId="1" x="716.2059" y="608.1833" z="0.09999999" pathPrecision="3" />
+	
+			<!-- last tunnel (SW area) -->
+			<MoveTo questId="1" x="675.0934" y="603.4433" z="0.09999999" pathPrecision="3" />
+	
+			<!-- Exit the last tunnel (SW area) -->
+			<MoveTo questId="1" x="657.1575" y="601.4256" z="0.1" pathPrecision="3" />
+	
+			<!-- Move back to the exit -->
+			<MoveTo questId="1" x="639.0251" y="584.1542" z="0.1" pathPrecision="3" />
+	 
+			<!-- EXIT Wishing Well -->
+			<UseObject questId="1" x="2277.743" y="2669.838" z="27.1" actorId="176537" isPortal="True" destinationWorldId="71150" />
+		
+			<!-- ********************************** -->
+			<!--    EXITED The 3rd Wishing Well     -->
+			<!-- ********************************** -->	
+ 
+			<!-- Head past the 3rd Well spawn point -->
+			<MoveTo questId="1" x="2138.311" y="2531.311" z="27.1" pathPrecision="3" />
+ 
+			<!-- Head up to and check on the Sarkoth cellar -->
+			<MoveTo questId="1" x="2095.91" y="2503.277" z="27.1" pathPrecision="3" />
+		
+				
+			<!-- ********************************************************************** -->
+			<!-- *******   SARKOTH's CELLAR (3RD WISHING WELL HAD SPAWNED)  *********** -->	
+			<!-- ********************************************************************** -->
+			<If condition="ActorExistsAt(176007, 2059.629, 2478.667, 27.02374, 15)">
+			
+				<MoveTo questId="1" x="2064.567" y="2479.541" z="27.80197" pathPrecision="3" />
+	 
+				<!-- enter cellar -->
+				<UseObject questId="1" x="2080.165" y="2496.148" z="27.1" actorId="176007" isPortal="True" destinationWorldId="106746" />
+		
+				<!-- Move to end of hallway, facing the door to Sarkoth's room -->
+				<MoveTo questId="1" x="120.4872" y="154.2549" z="0.1000008" pathPrecision="3"/>	
+		
+				<!-- Move a little way through doorway into Sarkoth's room - Sarkoth should be under attack now - -->
+				<MoveTo questId="1" x="122.1677" y="133.6614" z="0.1000001" pathPrecision="3"/>	
+		
+				<!-- Move to where Sarkoth originally stood - Loot time - -->
+				<MoveTo questId="1" x="120.5996" y="97.89087" z="0.1000008" pathPrecision="3"/>	
+		
+				<!-- Move back to doorway leading to the hallway - -->
+				<MoveTo questId="1" x="121.9528" y="132.3162" z="0.1000002" pathPrecision="3"/>		
+		
+				<!-- Move into hallway, passed the chest where char gets stuck - -->
+				<MoveTo questId="1" x="121.2433" y="155.1266" z="0.1000005" pathPrecision="3"/>		
+		
+				<!-- Move to portal -->
+				<MoveTo questId="1" x="70.68034" y="160.1532" z="3.824475" pathPrecision="3"/>	
+		
+				<!-- Leave Dank Cellar -->
+				<UseObject questId="1" x="70.68034" y="160.1532" z="3.824475" actorId="175467" isPortal="True" destinationWorldId="71150" />
+				<!-- Wait for a bit -->
+				<WaitTimer questId="1" step="4" waitTime="1000" />
+					
+				<!-- ********************************************** -->
+				<!-- *******   EXITED SARKOTH's CELLAR  *********** -->	
+				<!-- ********************************************** -->
+	  
+				<!-- Move south east of Sarkoth's cellar, on to the path -->
+				<MoveTo questId="1" x="2090.071" y="2527.623" z="27.1" pathPrecision="3" />
+	
+				<!-- Head East towards the Old Ruins -->
+				<MoveTo questId="1" x="2074.123" y="2530.553" z="27.1" pathPrecision="3" />
+ 
+				<!-- Head East towards the Old Ruins -->
+				<MoveTo questId="1" x="2025.761" y="2558.274" z="27.1" pathPrecision="3" />
+ 
+				<!-- Head East towards the Old Ruins -->
+				<MoveTo questId="1" x="1997.861" y="2586.81" z="27.1" pathPrecision="3" />
+ 
+				<!-- Move the the start of the wooden steps leading to the Old Ruins -->
+				<MoveTo questId="1" x="1994.045" y="2623.99" z="30.23421" pathPrecision="3" />
+ 
+				<!-- Move into the Old Ruins -->
+				<MoveTo questId="1" x="1992.256" y="2654.769" z="39.62415" pathPrecision="3" />
+ 
+				<!-- Take the SW road into the Old Ruins -->
+				<MoveTo questId="1" x="2004.257" y="2673.814" z="40.15685" pathPrecision="3" />
+ 
+				<!-- Take the SW road into the Old Ruins -->
+				<MoveTo questId="1" x="2056.799" y="2670.559" z="40.23704" pathPrecision="3" />
+ 
+				<!-- Move towards the 4th Well spawn point -->
+				<MoveTo questId="1" x="2114.916" y="2675.161" z="40.15685" pathPrecision="3" />
+ 
+				<!-- Move alog the SE road and next to the Dark cellar spawn point -->
+				<MoveTo questId="1" x="2116.043" y="2714.831" z="40.15685" pathPrecision="3" />
+ 
+				<!-- Move to the fountain -->
+				<MoveTo questId="1" x="2109.567" y="2759.404" z="40.15685" pathPrecision="3" />
+ 
+				<!-- Move towards the Queen -->
+				<MoveTo questId="1" x="2079.193" y="2774.092" z="40.15685" pathPrecision="3" />
+ 
+				<!-- Move towards the Queen -->
+				<MoveTo questId="1" x="2037.812" y="2773.149" z="40.15685" pathPrecision="3" />
+ 
+				<!-- Move towards Waypoint -->
+				<MoveTo questId="1" x="2007.91" y="2755.913" z="40.15685" pathPrecision="3" />
+ 
+				<!-- Move passed the queen -->
+				<MoveTo questId="1" x="1977.655" y="2787.449" z="42.1177" pathPrecision="3" />	
+ 
+				<!-- Take the Waypoint back to New Tristram -->
+				<UseWaypoint questId="1" x="1977.655" y="2787.449" z="42.1177" levelArea="1999503360" actorId="192164" waypointNumber="0" />
+		
+				<!-- Wait for a bit -->
+				<WaitTimer questId="1" waitTime="1000" />
+	  	  
+				<!-- Talk to Captain Rumford in New Tristram to hand in the quest -->
+				<TalkTo questId="87700" stepId="55" actorId="3739" x="2961.558" y="2807.838" z="24.04533" pathPrecision="3" skipConversation="True" /> 
+			
+			
+				<LeaveGame reason="Lets do it again" />
+		
+			</If>
+			<!-- ***************************************************************************** -->
+			<!-- *******   END OF SARKOTH's CELLAR (3RD WISHING WELL HAD SPAWNED)  *********** -->	
+			<!-- ***************************************************************************** -->
+	
+			<!-- Head East towards the Old Ruins -->
+			<MoveTo questId="1" x="2074.123" y="2530.553" z="27.1" pathPrecision="3" />
+ 
+			<!-- Head East towards the Old Ruins -->
+			<MoveTo questId="1" x="2025.761" y="2558.274" z="27.1" pathPrecision="3" />
+ 
+			<!-- Head East towards the Old Ruins -->
+			<MoveTo questId="1" x="1997.861" y="2586.81" z="27.1" pathPrecision="3" />
+ 
+			<!-- Move the the start of the wooden steps leading to the Old Ruins -->
+			<MoveTo questId="1" x="1994.045" y="2623.99" z="30.23421" pathPrecision="3" />
+ 
+			<!-- Move into the Old Ruins -->
+			<MoveTo questId="1" x="1992.256" y="2654.769" z="39.62415" pathPrecision="3" />
+ 
+			<!-- Take the SW road into the Old Ruins -->
+			<MoveTo questId="1" x="2004.257" y="2673.814" z="40.15685" pathPrecision="3" />
+ 
+			<!-- Take the SW road into the Old Ruins -->
+			<MoveTo questId="1" x="2056.799" y="2670.559" z="40.23704" pathPrecision="3" />
+ 
+			<!-- Move towards the 4th Well spawn point -->
+			<MoveTo questId="1" x="2114.916" y="2675.161" z="40.15685" pathPrecision="3" />
+ 
+			<!-- Move alog the SE road and next to the Dark cellar spawn point -->
+			<MoveTo questId="1" x="2116.043" y="2714.831" z="40.15685" pathPrecision="3" />
+ 
+			<!-- Move to the fountain -->
+			<MoveTo questId="1" x="2109.567" y="2759.404" z="40.15685" pathPrecision="3" />
+ 
+			<!-- Move towards the Queen -->
+			<MoveTo questId="1" x="2079.193" y="2774.092" z="40.15685" pathPrecision="3" />
+ 
+			<!-- Move towards the Queen -->
+			<MoveTo questId="1" x="2037.812" y="2773.149" z="40.15685" pathPrecision="3" />
+ 
+			<!-- Move towards Waypoint -->
+			<MoveTo questId="1" x="2007.91" y="2755.913" z="40.15685" pathPrecision="3" />
+ 
+			<!-- Move passed the queen -->
+			<MoveTo questId="1" x="1977.655" y="2787.449" z="42.1177" pathPrecision="3" />	
+ 
+			<!-- Take the Waypoint back to New Tristram -->
+			<UseWaypoint questId="1" x="1977.655" y="2787.449" z="42.1177" levelArea="1999503360" actorId="192164" waypointNumber="0" />
+		
+			<!-- Wait for a bit -->
+			<WaitTimer questId="1" waitTime="1000" />
+	  	  
+			<!-- Talk to Captain Rumford in New Tristram to hand in the quest -->
+			<TalkTo questId="87700" stepId="55" actorId="3739" x="2961.558" y="2807.838" z="24.04533" pathPrecision="3" skipConversation="True" /> 
+	
+			<LeaveGame reason="Time to start again!" />
+		
+			<!-- We are back in New Tristram -->
+			<!-- Run Done! -->
+		
+		</If>
+		<!-- *********************************** -->
+		<!-- END OF 3RD WISHING WELL SPAWN POINT -->
+		<!-- *********************************** -->
+		
+ 
+		<!-- Head past the 3rd Well spawn point -->
+		<MoveTo questId="1" x="2138.311" y="2531.311" z="27.1" pathPrecision="3" />
+ 
+		<!-- Head up to and check on the Sarkoth cellar -->
+		<MoveTo questId="1" x="2095.91" y="2503.277" z="27.1" pathPrecision="3" />
+		
+		<!-- ******************************************************************************** -->
+		<!-- *******   SARKOTH's CELLAR (NO WELLS HAVE SPAWNED UP TO THIS POINT)  *********** -->	
+		<!-- ******************************************************************************** -->
+		<If condition="ActorExistsAt(176007, 2059.629, 2478.667, 27.02374, 15)">
+			
+			<MoveTo questId="1" x="2064.567" y="2479.541" z="27.80197" pathPrecision="3" />
+	 
+			<!-- enter cellar -->
+			<UseObject questId="1" x="2080.165" y="2496.148" z="27.1" actorId="176007" isPortal="True" destinationWorldId="106746" />
+		
+			<!-- Move to end of hallway, facing the door to Sarkoth's room -->
+			<MoveTo questId="1" x="120.4872" y="154.2549" z="0.1000008" pathPrecision="3"/>	
+		
+			<!-- Move a little way through doorway into Sarkoth's room - Sarkoth should be under attack now - -->
+			<MoveTo questId="1" x="122.1677" y="133.6614" z="0.1000001" pathPrecision="3"/>	
+		
+			<!-- Move to where Sarkoth originally stood - Loot time - -->
+			<MoveTo questId="1" x="120.5996" y="97.89087" z="0.1000008" pathPrecision="3"/>	
+		
+			<!-- Move back to doorway leading to the hallway - -->
+			<MoveTo questId="1" x="121.9528" y="132.3162" z="0.1000002" pathPrecision="3"/>		
+		
+			<!-- Move into hallway, passed the chest where char gets stuck - -->
+			<MoveTo questId="1" x="121.2433" y="155.1266" z="0.1000005" pathPrecision="3"/>		
+		
+			<!-- Move to portal -->
+			<MoveTo questId="1" x="70.68034" y="160.1532" z="3.824475" pathPrecision="3"/>	
+		
+			<!-- Leave Dank Cellar -->
+			<UseObject questId="1" x="70.68034" y="160.1532" z="3.824475" actorId="175467" isPortal="True" destinationWorldId="71150" />
+			<!-- Wait for a bit -->
+			<WaitTimer questId="1" step="4" waitTime="1000" />
+					
+			<!-- ********************************************** -->
+			<!-- *******   EXITED SARKOTH's CELLAR  *********** -->	
+			<!-- ********************************************** -->
+	  
+			<!-- Move south east of Sarkoth's cellar, on to the path -->
+			<MoveTo questId="1" x="2090.071" y="2527.623" z="27.1" pathPrecision="3" />
+	
+			<!-- Head East towards the Old Ruins -->
+			<MoveTo questId="1" x="2074.123" y="2530.553" z="27.1" pathPrecision="3" />
+ 
+			<!-- Head East towards the Old Ruins -->
+			<MoveTo questId="1" x="2025.761" y="2558.274" z="27.1" pathPrecision="3" />
+ 
+			<!-- Head East towards the Old Ruins -->
+			<MoveTo questId="1" x="1997.861" y="2586.81" z="27.1" pathPrecision="3" />
+ 
+			<!-- Move the the start of the wooden steps leading to the Old Ruins -->
+			<MoveTo questId="1" x="1994.045" y="2623.99" z="30.23421" pathPrecision="3" />
+ 
+			<!-- Move into the Old Ruins -->
+			<MoveTo questId="1" x="1992.256" y="2654.769" z="39.62415" pathPrecision="3" />
+ 
+			<!-- Take the SW road into the Old Ruins -->
+			<MoveTo questId="1" x="2004.257" y="2673.814" z="40.15685" pathPrecision="3" />
+ 
+			<!-- Take the SW road into the Old Ruins -->
+			<MoveTo questId="1" x="2056.799" y="2670.559" z="40.23704" pathPrecision="3" />
+ 
+			<!-- Move towards the 4th Well spawn point -->
+			<MoveTo questId="1" x="2114.916" y="2675.161" z="40.15685" pathPrecision="3" />
+		
+			<!-- ********************************************************* -->
+			<!-- Wishing Well - 4th Spawn Point (Sarkoth's Cellar Spawned) -->
+			<!-- ********************************************************* -->
+			<If condition="ActorExistsAt(176003, 2144.381, 2684.001, 40.15685, 15)">
+	
+				<!-- Move to Wishing Well portal -->
+				<MoveTo questId="1" x="2144.381" y="2684.001" z="40.15685" pathPrecision="3" />
+	 
+				<!-- enter Wishing Well -->
+				<UseObject questId="1" x="2144.381" y="2684.001" z="40.15685" actorId="176003" isPortal="True" destinationWorldId="230288" />		
+	
+				<!-- first tunnel -->
+				<MoveTo questId="1" x="599.8204" y="586.3254" z="0.1" pathPrecision="3" />
+	
+				<!-- first tunnel -->
+				<MoveTo questId="1" x="561.3907" y="536.8251" z="0.1" pathPrecision="3" />
+	
+				<!-- first tunnel -->
+				<MoveTo questId="1" x="564.5542" y="519.8446" z="0.1" pathPrecision="3" />
+	
+				<!-- end of the first tunnel -->
+				<MoveTo questId="1" x="618.5053" y="471.6276" z="0.1" pathPrecision="3" />
+	
+				<!-- leaving first tunnel -->
+				<MoveTo questId="1" x="566.8047" y="524.7172" z="0.09999999" pathPrecision="3" />
+	
+				<!-- leaving first tunnel -->
+				<MoveTo questId="1" x="567.3621" y="557.3196" z="0.1" pathPrecision="3" />
+	
+				<!-- Exit the first tunnel -->
+				<MoveTo questId="1" x="596.7606" y="582.0917" z="0.1" pathPrecision="3" />
+	
+				<!-- go to second tunnel -->
+				<MoveTo questId="1" x="569.5868" y="619.0797" z="0.1" pathPrecision="3" />
+	
+				<!-- second tunnel -->
+				<MoveTo questId="1" x="538.6239" y="612.0385" z="0.1" pathPrecision="3" />
+	
+			<!-- End of the second tunnel -->
+				<MoveTo questId="1" x="475.5049" y="613.1216" z="0.1" pathPrecision="3" />
+	
+				<!-- second tunnel -->
+				<MoveTo questId="1" x="508.6369" y="609.6349" z="0.1" pathPrecision="3" />
+	
+				<!-- Exit the second tunnel -->
+				<MoveTo questId="1" x="569.4112" y="617.8286" z="0.1" pathPrecision="3" />
+	
+				<!-- Move down and into the big area -->
+				<MoveTo questId="1" x="559.687" y="657.5332" z="0.1" pathPrecision="3" />
+	
+				<!-- Move down and into the big area -->
+				<MoveTo questId="1" x="581.697" y="674.3673" z="0.1" pathPrecision="3" />
+	
+				<!-- Move down and into the big area -->
+				<MoveTo questId="1" x="603.0757" y="719.7067" z="0.1" pathPrecision="3" />
+	
+				<!-- Move to the end of the big area -->
+				<MoveTo questId="1" x="630.796" y="707.1558" z="0.1" pathPrecision="3" />
+	
+				<!-- Move up and out of the big area -->
+				<MoveTo questId="1" x="625.3596" y="673.4683" z="0.1" pathPrecision="3" />
+	
+				<!-- Move up and out of the big area -->
+				<MoveTo questId="1" x="622.1998" y="632.9279" z="0.1" pathPrecision="3" />
+	
+				<!-- Move to the last tunnel (SW area) -->
+				<MoveTo questId="1" x="649.465" y="609.2073" z="0.1" pathPrecision="3" />
+	
+				<!-- last tunnel (SW area) -->
+				<MoveTo questId="1" x="675.0934" y="603.4433" z="0.09999999" pathPrecision="3" />
+	
+				<!-- End of the last tunnel (SW area) -->
+				<MoveTo questId="1" x="716.2059" y="608.1833" z="0.09999999" pathPrecision="3" />
+	
+				<!-- last tunnel (SW area) -->
+				<MoveTo questId="1" x="675.0934" y="603.4433" z="0.09999999" pathPrecision="3" />
+	
+				<!-- Exit the last tunnel (SW area) -->
+				<MoveTo questId="1" x="657.1575" y="601.4256" z="0.1" pathPrecision="3" />
+	
+				<!-- Move back to the exit -->
+				<MoveTo questId="1" x="639.0251" y="584.1542" z="0.1" pathPrecision="3" />
+	 
+				<!-- EXIT Wishing Well -->
+				<UseObject questId="1" x="2277.743" y="2669.838" z="27.1" actorId="176537" isPortal="True" destinationWorldId="71150" />
+		
+				<!-- ********************************** -->
+				<!--    EXITED The 4th Wishing Well     -->
+				<!-- ********************************** -->	
+ 
+				<!-- Move along the SE road and next to the Dark cellar spawn point -->
+				<MoveTo questId="1" x="2116.043" y="2714.831" z="40.15685" pathPrecision="3" />
+ 
+				<!-- Move to the fountain -->
+				<MoveTo questId="1" x="2109.567" y="2759.404" z="40.15685" pathPrecision="3" />
+ 
+				<!-- Move towards the Queen -->
+				<MoveTo questId="1" x="2079.193" y="2774.092" z="40.15685" pathPrecision="3" />
+ 
+				<!-- Move towards the Queen -->
+				<MoveTo questId="1" x="2037.812" y="2773.149" z="40.15685" pathPrecision="3" />
+ 
+				<!-- Move towards Waypoint -->
+				<MoveTo questId="1" x="2007.91" y="2755.913" z="40.15685" pathPrecision="3" />
+ 
+				<!-- Move passed the queen -->
+				<MoveTo questId="1" x="1977.655" y="2787.449" z="42.1177" pathPrecision="3" />	
+ 
+				<!-- Take the Waypoint back to New Tristram -->
+				<UseWaypoint questId="1" x="1977.655" y="2787.449" z="42.1177" levelArea="1999503360" actorId="192164" waypointNumber="0" />
+		
+				<!-- Wait for a bit -->
+				<WaitTimer questId="1" waitTime="1000" />
+	  	  
+				<!-- Talk to Captain Rumford in New Tristram to hand in the quest -->
+				<TalkTo questId="87700" stepId="55" actorId="3739" x="2961.558" y="2807.838" z="24.04533" pathPrecision="3" skipConversation="True" /> 
+	
+				<LeaveGame reason="Time to start again!" />
+		
+				<!-- We are back in New Tristram -->
+				<!-- Run Done! -->
+		
+			</If>		
+			<!-- ************************************************************** -->
+			<!-- END OF 4th Wishing Well Spawn Point (Sarkoth's Cellar Spawned) -->
+			<!-- ************************************************************** -->
+			
+ 
+			<!-- Move alog the SE road and next to the Dark cellar spawn point -->
+			<MoveTo questId="1" x="2116.043" y="2714.831" z="40.15685" pathPrecision="3" />
+ 
+			<!-- Move to the fountain -->
+			<MoveTo questId="1" x="2109.567" y="2759.404" z="40.15685" pathPrecision="3" />
+ 
+			<!-- Move towards the Queen -->
+			<MoveTo questId="1" x="2079.193" y="2774.092" z="40.15685" pathPrecision="3" />
+ 
+			<!-- Move towards the Queen -->
+			<MoveTo questId="1" x="2037.812" y="2773.149" z="40.15685" pathPrecision="3" />
+ 
+			<!-- Move towards Waypoint -->
+			<MoveTo questId="1" x="2007.91" y="2755.913" z="40.15685" pathPrecision="3" />
+ 
+			<!-- Move passed the queen -->
+			<MoveTo questId="1" x="1977.655" y="2787.449" z="42.1177" pathPrecision="3" />	
+ 
+			<!-- Take the Waypoint back to New Tristram -->
+			<UseWaypoint questId="1" x="1977.655" y="2787.449" z="42.1177" levelArea="1999503360" actorId="192164" waypointNumber="0" />
+		
+			<!-- Wait for a bit -->
+			<WaitTimer questId="1" waitTime="1000" />
+	  	  
+			<!-- Talk to Captain Rumford in New Tristram to hand in the quest -->
+			<TalkTo questId="87700" stepId="55" actorId="3739" x="2961.558" y="2807.838" z="24.04533" pathPrecision="3" skipConversation="True" /> 
+			
+			
+			<LeaveGame reason="Lets do it again" />
+		
+		</If>		
+		<!-- *************************************************************************************** -->
+		<!-- *******   END OF SARKOTH's CELLAR (NO WELLS HAVE SPAWNED UP TO THIS POINT)  *********** -->	
+		<!-- *************************************************************************************** -->
+	
+	
+		<!-- Head East towards the Old Ruins -->
+		<MoveTo questId="1" x="2074.123" y="2530.553" z="27.1" pathPrecision="3" />
+ 
+		<!-- Head East towards the Old Ruins -->
+		<MoveTo questId="1" x="2025.761" y="2558.274" z="27.1" pathPrecision="3" />
+ 
+		<!-- Head East towards the Old Ruins -->
+		<MoveTo questId="1" x="1997.861" y="2586.81" z="27.1" pathPrecision="3" />
+ 
+		<!-- Move the the start of the wooden steps leading to the Old Ruins -->
+		<MoveTo questId="1" x="1994.045" y="2623.99" z="30.23421" pathPrecision="3" />
+ 
+		<!-- Move into the Old Ruins -->
+		<MoveTo questId="1" x="1992.256" y="2654.769" z="39.62415" pathPrecision="3" />
+ 
+		<!-- Take the SW road into the Old Ruins -->
+		<MoveTo questId="1" x="2004.257" y="2673.814" z="40.15685" pathPrecision="3" />
+ 
+		<!-- Take the SW road into the Old Ruins -->
+		<MoveTo questId="1" x="2056.799" y="2670.559" z="40.23704" pathPrecision="3" />
+ 
+		<!-- Move towards the 4th Well spawn point -->
+		<MoveTo questId="1" x="2114.916" y="2675.161" z="40.15685" pathPrecision="3" />
+		
+		
+		<!-- ************************************************************************************ -->
+		<!-- Wishing Well - 4th Spawn Point (No Sarkoth Cellar or Wells Spawned Up To this Point) -->
+		<!-- ************************************************************************************ -->
+		<If condition="ActorExistsAt(176003, 2144.381, 2684.001, 40.15685, 15)">
+	
+			<!-- Move to Wishing Well portal -->
+			<MoveTo questId="1" x="2144.381" y="2684.001" z="40.15685" pathPrecision="3" />
+	 
+			<!-- enter Wishing Well -->
+			<UseObject questId="1" x="2144.381" y="2684.001" z="40.15685" actorId="176003" isPortal="True" destinationWorldId="230288" />		
+	
+			<!-- first tunnel -->
+			<MoveTo questId="1" x="599.8204" y="586.3254" z="0.1" pathPrecision="3" />
+	
+			<!-- first tunnel -->
+			<MoveTo questId="1" x="561.3907" y="536.8251" z="0.1" pathPrecision="3" />
+	
+			<!-- first tunnel -->
+			<MoveTo questId="1" x="564.5542" y="519.8446" z="0.1" pathPrecision="3" />
+	
+			<!-- end of the first tunnel -->
+			<MoveTo questId="1" x="618.5053" y="471.6276" z="0.1" pathPrecision="3" />
+	
+			<!-- leaving first tunnel -->
+			<MoveTo questId="1" x="566.8047" y="524.7172" z="0.09999999" pathPrecision="3" />
+	
+			<!-- leaving first tunnel -->
+			<MoveTo questId="1" x="567.3621" y="557.3196" z="0.1" pathPrecision="3" />
+	
+			<!-- Exit the first tunnel -->
+			<MoveTo questId="1" x="596.7606" y="582.0917" z="0.1" pathPrecision="3" />
+	
+			<!-- go to second tunnel -->
+			<MoveTo questId="1" x="569.5868" y="619.0797" z="0.1" pathPrecision="3" />
+	
+			<!-- second tunnel -->
+			<MoveTo questId="1" x="538.6239" y="612.0385" z="0.1" pathPrecision="3" />
+	
+			<!-- End of the second tunnel -->
+			<MoveTo questId="1" x="475.5049" y="613.1216" z="0.1" pathPrecision="3" />
+	
+			<!-- second tunnel -->
+			<MoveTo questId="1" x="508.6369" y="609.6349" z="0.1" pathPrecision="3" />
+	
+			<!-- Exit the second tunnel -->
+			<MoveTo questId="1" x="569.4112" y="617.8286" z="0.1" pathPrecision="3" />
+	
+			<!-- Move down and into the big area -->
+			<MoveTo questId="1" x="559.687" y="657.5332" z="0.1" pathPrecision="3" />
+	
+			<!-- Move down and into the big area -->
+			<MoveTo questId="1" x="581.697" y="674.3673" z="0.1" pathPrecision="3" />
+	
+			<!-- Move down and into the big area -->
+			<MoveTo questId="1" x="603.0757" y="719.7067" z="0.1" pathPrecision="3" />
+	
+			<!-- Move to the end of the big area -->
+			<MoveTo questId="1" x="630.796" y="707.1558" z="0.1" pathPrecision="3" />
+	
+			<!-- Move up and out of the big area -->
+			<MoveTo questId="1" x="625.3596" y="673.4683" z="0.1" pathPrecision="3" />
+	
+			<!-- Move up and out of the big area -->
+			<MoveTo questId="1" x="622.1998" y="632.9279" z="0.1" pathPrecision="3" />
+	
+			<!-- Move to the last tunnel (SW area) -->
+			<MoveTo questId="1" x="649.465" y="609.2073" z="0.1" pathPrecision="3" />
+	
+			<!-- last tunnel (SW area) -->
+			<MoveTo questId="1" x="675.0934" y="603.4433" z="0.09999999" pathPrecision="3" />
+	
+			<!-- End of the last tunnel (SW area) -->
+			<MoveTo questId="1" x="716.2059" y="608.1833" z="0.09999999" pathPrecision="3" />
+	
+			<!-- last tunnel (SW area) -->
+			<MoveTo questId="1" x="675.0934" y="603.4433" z="0.09999999" pathPrecision="3" />
+	
+			<!-- Exit the last tunnel (SW area) -->
+			<MoveTo questId="1" x="657.1575" y="601.4256" z="0.1" pathPrecision="3" />
+	
+			<!-- Move back to the exit -->
+			<MoveTo questId="1" x="639.0251" y="584.1542" z="0.1" pathPrecision="3" />
+	 
+			<!-- EXIT Wishing Well -->
+			<UseObject questId="1" x="2277.743" y="2669.838" z="27.1" actorId="176537" isPortal="True" destinationWorldId="71150" />
+		
+			<!-- ********************************** -->
+			<!--    EXITED The 4th Wishing Well     -->
+			<!-- ********************************** -->	
+ 
+			<!-- Move along the SE road and next to the Dark cellar spawn point -->
+			<MoveTo questId="1" x="2116.043" y="2714.831" z="40.15685" pathPrecision="3" />
+ 
+			<!-- Move to the fountain -->
+			<MoveTo questId="1" x="2109.567" y="2759.404" z="40.15685" pathPrecision="3" />
+ 
+			<!-- Move towards the Queen -->
+			<MoveTo questId="1" x="2079.193" y="2774.092" z="40.15685" pathPrecision="3" />
+ 
+			<!-- Move towards the Queen -->
+			<MoveTo questId="1" x="2037.812" y="2773.149" z="40.15685" pathPrecision="3" />
+ 
+			<!-- Move towards Waypoint -->
+			<MoveTo questId="1" x="2007.91" y="2755.913" z="40.15685" pathPrecision="3" />
+ 
+			<!-- Move passed the queen -->
+			<MoveTo questId="1" x="1977.655" y="2787.449" z="42.1177" pathPrecision="3" />	
+ 
+			<!-- Take the Waypoint back to New Tristram -->
+			<UseWaypoint questId="1" x="1977.655" y="2787.449" z="42.1177" levelArea="1999503360" actorId="192164" waypointNumber="0" />
+		
+			<!-- Wait for a bit -->
+			<WaitTimer questId="1" waitTime="1000" />
+	  	  
+			<!-- Talk to Captain Rumford in New Tristram to hand in the quest -->
+			<TalkTo questId="87700" stepId="55" actorId="3739" x="2961.558" y="2807.838" z="24.04533" pathPrecision="3" skipConversation="True" /> 
+	
+			<LeaveGame reason="Time to start again!" />
+		
+			<!-- We are back in New Tristram -->
+			<!-- Run Done! -->
+			
+		</If>
+		<!-- ***************************************************************************************** -->
+		<!-- END OF 4th Wishing Well Spawn Point (No Sarkoth Cellar or Wells Spawned Up To this Point) -->
+		<!-- ***************************************************************************************** -->
+		
+ 
+		<!-- Move alog the SE road and next to the Dark cellar spawn point -->
+		<MoveTo questId="1" x="2116.043" y="2714.831" z="40.15685" pathPrecision="3" />
+ 
+		<!-- Move to the fountain -->
+		<MoveTo questId="1" x="2109.567" y="2759.404" z="40.15685" pathPrecision="3" />
+ 
+		<!-- Move towards the Queen -->
+		<MoveTo questId="1" x="2079.193" y="2774.092" z="40.15685" pathPrecision="3" />
+ 
+		<!-- Move towards the Queen -->
+		<MoveTo questId="1" x="2037.812" y="2773.149" z="40.15685" pathPrecision="3" />
+ 
+		<!-- Move towards Waypoint -->
+		<MoveTo questId="1" x="2007.91" y="2755.913" z="40.15685" pathPrecision="3" />
+ 
+		<!-- Move passed the queen -->
+		<MoveTo questId="1" x="1977.655" y="2787.449" z="42.1177" pathPrecision="3" />	
+ 
+		<!-- Take the Waypoint back to New Tristram -->
+		<UseWaypoint questId="1" x="1977.655" y="2787.449" z="42.1177" levelArea="1999503360" actorId="192164" waypointNumber="0" />
+		
+		<!-- Wait for a bit -->
+		<WaitTimer questId="1" waitTime="1000" />
+	  	  
+		<!-- Talk to Captain Rumford in New Tristram to hand in the quest -->
+		<TalkTo questId="87700" stepId="55" actorId="3739" x="2961.558" y="2807.838" z="24.04533" pathPrecision="3" skipConversation="True" /> 
+	
+		<LeaveGame reason="Time to start again!" />
+		
+		<!-- We are back in New Tristram -->
+		<!-- Run Done! -->
+	
+ </Order>
+ 
+ <KillMonsters>True</KillMonsters>
+ <PickupLoot>True</PickupLoot>
+</Profile>
